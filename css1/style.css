@@ -1,0 +1,249 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: #111111;
+}
+
+ul li{
+	list-style: none;
+}
+
+.header{
+	background-color: #2545ac;
+	height: 68px;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+
+.navbar-brand img{
+	margin: 11.5px 0px;
+	width: 135px;
+	height: 45px;
+}
+
+
+
+.navbar-nav li{
+	font-size: 18px;
+	float: right;
+}
+
+
+
+.icon-social{
+	float: right;
+	padding-left: 30px;
+}
+
+.nav-content{
+	width: 100%;
+	float: left;
+	height: 75px;
+	background-color: #1c1f23;
+	font-size: 15px;
+}
+.nav{
+	padding: 18px 0;
+}
+.nav-link{
+	text-align: center;
+	color: #fff;
+	float: left;
+}
+
+.slide-show{
+	width: 100%;
+	float: left;
+	height: 525px;
+}
+
+.slide-show img{
+	width: 100%;
+	height: 100%;
+}
+
+.title-info{
+	height: 85px;
+}
+
+.title-info .title{
+	float: left;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.sub-text{
+	margin-top: -350px;
+	color: #fff;
+	float: left;
+}
+
+.sub-text p{
+	font-size: 15px;
+	padding-top: 40px;
+	line-height: 22px;
+}
+
+.horse-info{
+	width: 100%;
+	min-height: 500px;
+	float: left;
+}
+
+.title-info h2{
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	float: left;
+	padding: 28px 0;
+}
+
+.horse-image{
+	background-color: #363636;
+	float: left;
+	height: 300px;
+	margin-bottom: 20px;
+}
+
+.horse-image img{
+	width: 100%;
+	height: 210px;
+}
+
+.horse-image h3{	
+	padding-left: 17px;
+	float: left;
+	padding-top: 25px;
+	font-size: 18px;
+	color: #fff;
+}
+
+.horse-image p{
+	float: left;
+	color: #a5a5a5;
+	font-size: 15px;
+	padding-left: 17px;
+}
+
+.arrow-control{
+	margin-top: 20px;
+	margin-bottom: 55px;
+	float: left;
+	width: 100%;
+	height: 30px;
+}
+.box-arrow{
+	height: 30px;
+	width: 35px;
+	background-color: #2545ac;
+}
+
+.box-arrow img{
+	width: 20px;
+	height: 17px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.arrow-control .left-arrow{
+	float: left;
+}
+
+.arrow-control .right-arrow{
+	float: right;
+}
+
+.race-info{
+	float: left;
+	width: 100%;
+	height: 285px;
+	background-color: #363636;
+	border-bottom: 1px solid #111;
+}
+
+.race-info img{
+	width: 100%;
+	height: 190px;
+	float: left;
+}
+
+.race-info h3{
+	padding-top: 12px;
+	float: left;
+	color: #fff;
+	font-size: 16px;
+	padding-left: 17px;
+}
+
+.race-info p{
+	float: left;
+	color: #a5a5a5;
+	font-size: 13px;
+	padding-left: 17px;
+}
+
+.race{
+	width: 100%;
+	height: 105px;
+	float: left;
+	background-color: #363636;
+	border-bottom: 1px solid #111;
+}
+
+.race img{
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin:15px;
+}
+
+.right-newletter{
+	float: left;
+	width: 150px;
+}
+.right-newletter h3{
+	padding-top: 15px;
+	font-size: 14px;
+	color: #fff;
+	float: left;
+}
+
+.right-newletter p{
+	float: left;
+	color: #a5a5a5;
+	font-size: 13px;
+}
+
+.edmond-race{
+	float: left;
+	background-image: url(../images/background-edmond.png);
+	width: 100%;
+	height: 285px;
+	padding-top: 90px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.edmond-race h3{
+	width: 100%;
+	float: left;
+	font-size: 20px;
+	padding-left: 27px;
+}
+
+.edmond-race h2{
+	width: 100%;
+	float: left;
+	padding-left: 27px;
+	font-size: 26px;
+	color: #fefefe;
+	padding-top: 18px;
+}
+
+.edmond-race img{
+	float: left;
+	padding-left: 27px;
+	padding-top: 20px;
+	height: 65px;
+}

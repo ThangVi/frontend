@@ -391,6 +391,8 @@
 	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
+	background-color: #252525;
+	margin-bottom: 50px;
 }
 
 .table{
@@ -441,4 +443,85 @@
     background-color: #363636;
     border-radius: 50%;
     border: 1px solid #354362;
+}
+
+.field-box{
+	width: 88px;
+	height: 30px;
+	float: left;
+	border: 1px solid #354362;
+	border-radius: 15px;
+	p{
+		text-align: center;
+		padding-top: 2px;
+	}
+}
+
+.field-box:hover{
+	background-color: #fff;
+	color: #1eca2b;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	border-top: 1px solid #363636;
+}
+
+.form-contact{
+	background-color: #2545ac;
+}
+
+.form-title{
+	height: 28px;
+	margin: 35px 0;
+	i{
+		color: $font-white;
+		font-size: 28px;
+		float: left;
+		padding-right: 18px;
+	}
+	p{
+		float: left;
+		font-size: 20px;
+		color: $font-white;
+		text-transform: uppercase;
+	}
+}
+
+.two-input{
+	float: left;
+	width: 40%;
+	margin-right: 2.5%;
+	font-size: 15px;
+}
+
+.one-input{
+	float: left;
+	width: 40%;
+	margin-left: 1.5%;
+	font-size: 15px;
+}
+.button-sets{
+ 	margin-top: 98px;
+	float: right;
+	width: 12%;
+	margin-left: 4%;
+	height: 35px;
+	font-size: 15px;
+	boder-radius: 17.5px;
+	background-color: #fff;
+}
+
+.form-control{
+	height: 50px;
+}
+.email{
+	margin-top: 35px;
+}
+.btn{
+	width: 100%;
+	height: 100%;
+	float: left;
+	img{
+		margin-left: 10px;
+	}
 }

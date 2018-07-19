@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>Practice1</title>
-	<link rel="stylesheet" type="text/css" href="design/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="design/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="fontawesome/css/fontawesome-all.css" >
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/customize.css">
@@ -259,33 +259,89 @@
 	</section>
 	<section class="race-table fn-100">
 		<div class="container">
-		  <ul class="nav nav-tabs">
-		    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-		    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-		    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-		    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
-		  </ul>
+			<div class="race-table-info">
+		  	<ul class="nav nav-tabs">
+			    <li><a data-toggle="tab" href="#menu1">Upcoming Runners</a></li>
+			    <li><a data-toggle="tab" href="#menu2">Recent Winners</a></li>
+			    <li><a data-toggle="tab" href="#menu3">Lastest Results</a></li>
+		  	</ul>
 
-		  <div class="tab-content">
-		    <div id="home" class="tab-pane fade in active">
-		      <h3>HOME</h3>
-		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		    </div>
-		    <div id="menu1" class="tab-pane fade">
-		      <h3>Menu 1</h3>
-		      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		    </div>
-		    <div id="menu2" class="tab-pane fade">
-		      <h3>Menu 2</h3>
-		      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-		    </div>
-		    <div id="menu3" class="tab-pane fade">
-		      <h3>Menu 3</h3>
-		      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-		    </div>
-		  </div>
+		  	<div class="tab-content">
+
+		    	<div id="menu1" class="tab-pane fade">
+		    		<div class="title-menu"><h2>Acceptances</h2></div>
+		    		<table class="table">
+					  	<thead class="thead-dark">
+						    <tr>
+						      	<th scope="col">Date</th>
+						      	<th scope="col">time</th>
+						      	<th scope="col">horse</th>
+						      	<th scope="col">jockey</th>
+						      	<th scope="col">track</th>
+						      	<th scope="col">race</th>
+						      	<th scope="col">field/form</th>
+						    </tr>
+					  	</thead>
+					  	<tbody>
+						    <tr>
+						      	<th scope="row">05/Mar, 2018</th>
+						      	<td>9.10 PM</td>
+						      	<td><div class="text-blue"><a href="#">Fairlighting</a></div></td>
+						      	<td>J Lee 59kg</td>
+						      	<td>Grafton</td>
+						      	<td><span class="badge badge-light text-blue">06</span></td>
+						      	<td><div class="field-box text-blue">Field</div></td>
+						    </tr>
+						    <tr>
+						      	<th scope="row">05/Mar, 2018</th>
+						      	<td>9.10 PM</td>
+						      	<td><div class="text-blue"><a href="#">Fairlighting</a></div></td>
+						      	<td>J Lee 59kg</td>
+						      	<td>Grafton</td>
+						      	<td><span class="badge badge-light">9</span></td>
+						      	<td><div class="field-box">Field</div></td>
+						    </tr>
+						    <tr>
+						      	<th scope="row">05/Mar, 2018</th>
+						      	<td>9.10 PM</td>
+						      	<td><div class="text-blue"><a href="#">Fairlighting</a></div></td>
+						      	<td>J Lee 59kg</td>
+						      	<td>Grafton</td>
+						      	<td><span class="badge badge-light">9</span></td>
+						      	<td><div class="field-box">Field</div></td>
+						    </tr>
+						    <tr>
+						      	<th scope="row">05/Mar, 2018</th>
+						      	<td>9.10 PM</td>
+						      	<td><div class="text-blue"><a href="#">Fairlighting</a></div></td>
+						      	<td>J Lee 59kg</td>
+						      	<td>Grafton</td>
+						      	<td><span class="badge badge-light">9</span></td>
+						      	<td><div class="field-box">Field</div></td>
+						    </tr>
+						    <tr>
+						      	<th scope="row">05/Mar, 2018</th>
+						      	<td>9.10 PM</td>
+						      	<td><div class="text-blue"><a href="#">Fairlighting</a></div></td>
+						      	<td>J Lee 59kg</td>
+						      	<td>Grafton</td>
+						      	<td><span class="badge badge-light">9</span></td>
+						      	<td><div class="field-box">Field</div></td>
+						    </tr>
+					  	</tbody>
+					</table>
+		    	</div>
+		    	<div id="menu2" class="tab-pane fade">
+
+		    	</div>
+		    	<div id="menu3" class="tab-pane fade">
+		    	
+		    	</div>
+		  	</div>
+			</div>
 		</div>
 	</section>
 </body>
 </html>
 
+<div style="text-transform: uppercase; text-align: center;"></div>

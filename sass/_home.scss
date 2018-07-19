@@ -385,3 +385,60 @@
 .navbar-collapse{
 	paddding-left: 0;
 }
+
+
+.table{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.table{
+	.thead-dark{
+		th{
+			text-transform: uppercase;
+			font-size: 15px;
+			background-color: #000;
+			border-color: #000;
+			font-weight: normal;
+		}
+	}
+} 
+
+.race-table-info{
+	background-color: #363636;
+}
+
+.nav-tabs {
+    background-color: #000;
+    border-bottom: 1px solid #363636;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #3c74f3;
+    background-color: #363636;
+    border: 1px solid #363636;
+}
+
+.title-menu{
+	h2{
+		color: #fff;
+	    text-align: center;
+	    font-size: 21px;
+	    text-transform: uppercase;
+	    margin-bottom: 15px;
+	}
+}
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 5px 5px;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #363636;
+    border-radius: 50%;
+    border: 1px solid #354362;
+}

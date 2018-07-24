@@ -3,3 +3,10 @@
       -ms-transform: $property;
           transform: $property;
 }
+
+@mixin transition($property){
+	transition: $property;
+    -moz-transition: $property;
+    -webkit-transition: $property;
+    -o-transition: $property;
+}

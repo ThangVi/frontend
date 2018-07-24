@@ -11,7 +11,11 @@ ul li{
 	padding: 0;
 }
 
-.fn-100{
-	float: left;
-	width: 100%;
+.btn{
+	&.btn-primary{
+		@include transition(all 0.5s ease-in);
+	}
+}
+.field-box{
+	@include transition(all 0.6s ease-in);
 }

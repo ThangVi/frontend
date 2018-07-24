@@ -28,9 +28,17 @@ ul li {
   margin: 0;
   padding: 0; }
 
-.fn-100 {
-  float: left;
-  width: 100%; }
+.btn.btn-primary {
+  transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in; }
+
+.field-box {
+  transition: all 0.6s ease-in;
+  -moz-transition: all 0.6s ease-in;
+  -webkit-transition: all 0.6s ease-in;
+  -o-transition: all 0.6s ease-in; }
 
 .header {
   background-color: #2545ac;
@@ -98,7 +106,8 @@ ul li {
 .slide-show .block-arrow {
   width: 50px;
   height: 90px;
-  background-color: #33393d; }
+  background-color: #33393d;
+  margin-top: 210px; }
 
 .slide-show .carousel-control-next-icon, .slide-show .carousel-control-prev-icon {
   width: 20px;
@@ -154,7 +163,8 @@ ul li {
 
 .horse-image img {
   width: 100%;
-  height: 210px; }
+  height: 210px;
+  object-fit: cover; }
 
 .horse-image h3 {
   padding-left: 17px;
@@ -178,6 +188,7 @@ ul li {
 .box-arrow {
   height: 30px;
   width: 35px;
+  margin-top: 1300px;
   background-color: #2545ac; }
 
 .box-arrow img {
@@ -256,14 +267,12 @@ ul li {
 
 .edmond-race h3 {
   width: 100%;
-  float: left;
   color: #fff;
   font-size: 20px;
   padding-left: 27px; }
 
 .edmond-race h2 {
   width: 100%;
-  float: left;
   padding-left: 27px;
   font-size: 26px;
   color: #fefefe;
@@ -316,12 +325,14 @@ ul li {
   border-color: #111111; }
 
 .bg-light {
+  margin-right: -15px;
+  margin-left: -15px;
   margin-top: 10px;
   background-color: #1c1f23 !important;
   font-size: 15px; }
 
 .bg-light li {
-  padding-right: 20px; }
+  padding-right: 25px; }
 
 .navbar-light .navbar-brand {
   color: #fff;
@@ -411,7 +422,8 @@ ul li {
   border-top: 1px solid #363636; }
 
 .form-contact {
-  background-color: #2545ac; }
+  background-color: #2545ac;
+  padding-bottom: 25px; }
 
 .form-title {
   height: 28px;
@@ -429,25 +441,22 @@ ul li {
 
 .two-input {
   float: left;
-  width: 40%;
-  margin-right: 2.5%;
+  width: 34.18803%;
+  margin-right: 2.77778%;
   font-size: 15px; }
 
 .one-input {
   float: left;
-  width: 40%;
-  margin-left: 1.5%;
+  width: 48.11966%;
+  margin-right: 5.34188%;
   font-size: 15px; }
 
 .button-sets {
   margin-top: 98px;
-  float: right;
-  width: 12%;
-  margin-left: 4%;
-  height: 35px;
+  float: left;
   font-size: 15px;
-  boder-radius: 17.5px;
-  background-color: #fff; }
+  background-color: #fff;
+  border-radius: 17.5px; }
 
 .form-control {
   height: 50px; }
@@ -455,12 +464,63 @@ ul li {
 .email {
   margin-top: 35px; }
 
-.btn {
+.button-sets .btn {
   width: 100%;
   height: 100%;
-  float: left; }
-  .btn img {
+  float: left;
+  background-color: #fff;
+  boder-radius: 17.5px; }
+  .button-sets .btn img {
     margin-left: 10px; }
+
+.button-sets .btn:hover {
+  background-color: #333;
+  color: #2545ac; }
+
+.btn {
+  border-radius: 17.5px; }
+
+.footer {
+  margin: 35px 0;
+  color: #fff; }
+
+.footer .row-footer {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.welcome-banner {
+  position: relative;
+  padding-bottom: 30px; }
+  .welcome-banner:after {
+    content: '';
+    display: block;
+    height: 45px;
+    width: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 30px; }
+
+.contact-content {
+  color: #fff;
+  font-size: 13px; }
+
+.contact-info {
+  font-size: 15px;
+  color: #fff; }
+  .contact-info h2 {
+    color: #3c74f3;
+    text-transform: uppercase;
+    font-size: 15px; }
+  .contact-info .contact-center {
+    width: 100%;
+    float: left; }
+  .contact-info i {
+    float: left;
+    padding-right: 10px;
+    margin-top: 4px; }
+  .contact-info p {
+    float: left; }
 
 .box {
   -webkit-transform: rotate(30deg);

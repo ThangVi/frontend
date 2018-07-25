@@ -24,6 +24,9 @@
 		//         });
 		//     // });
 		// });
+		// $el.addClass(className); --Add class moi
+		// $el.removeClass(className); --Xoa class
+		// $('#carousel-inner').append('<div class="carousel-item" id="carousel-item'+j+'"></div>'); ---add them the div co id #carousel-item[j]
 
 		function loadAjax(){
 			jQuery.ajax({
@@ -36,15 +39,18 @@
 							for(var i = 0; i < data.responseData.elements.length; i++){
 					  		html += '<div class="horse-image"><a href="#"><img src="'+data.responseData.elements[i].avatar+'"/></a><h3>'+data.responseData.elements[i].name+'</h2><p>'+data.responseData.elements[i].id+'</p></div>';
 								if ((i+1)%4 == 0){
-										jQuery('#carousel-item'+j).html(html);
-									html = '';
-									j++;
+										$('.carousel-inner').append('<div class="carousel-item" id="carousel-item'+j+'"></div>');
+										setTimeout(function() {
+										  $('#carousel-item'+j).html(html);
+											html = '';
+											j++;
+										},0);
 								}
 							}
 							// console.log(data);
 					}
 			});
-			loadNews();
+			//loadNews();
 		}
 
 		function loadNews(){
@@ -55,8 +61,7 @@
 				success: function(datanews){
 						var html = '';
 						var t = 1;
-							for(var i = 0; i < datanews.responseData.stableNews.media.length; i++){
-								for(var j = 0; j < datanews.responseData.stableNews.media.images.length; j++){
+							for(var i = 0; i < datanews.responseData.stableNews.media.images.length; i++){
 						  		html += '<div class="race"><a href="#"><img src="'+datanews.responseData.stableNews.media.images[j].cdnSmall+'"></a><div class="right-newletter"><a href="#"><h3>'+datanews.responseData.stableNews.media[j].title+'</h3></a><p>'+datanews.responseData.stableNews.publishedDate[i]+'</p></div></div>';
 									if ((i+1)%10 == 0){
 											jQuery('#race-new'+t).html(html);

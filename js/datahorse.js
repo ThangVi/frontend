@@ -39,18 +39,24 @@
 							for(var i = 0; i < data.responseData.elements.length; i++){
 					  		html += '<div class="horse-image"><a href="#"><img src="'+data.responseData.elements[i].avatar+'"/></a><h3>'+data.responseData.elements[i].name+'</h2><p>'+data.responseData.elements[i].id+'</p></div>';
 								if ((i+1)%4 == 0){
-										$('.carousel-inner').append('<div class="carousel-item" id="carousel-item'+j+'"></div>');
-										setTimeout(function() {
-										  $('#carousel-item'+j).html(html);
-											html = '';
-											j++;
-										},0);
+									if ((i+1)/4 ==1){
+										$('#horse-inner').append('<div class="carousel-item active" id="horse-item'+j+'"></div>');
+										$('#horse-item'+j).html(html);
+										html = '';
+										j++;
+									}
+									else{
+										$('#horse-inner').append('<div class="carousel-item" id="horse-item'+j+'"></div>');
+										$('#horse-item'+j).html(html);
+										html = '';
+										j++;
+									}
 								}
 							}
 							// console.log(data);
 					}
 			});
-			//loadNews();
+			loadNews();
 		}
 
 		function loadNews(){
@@ -60,15 +66,23 @@
 				type : 'GET',
 				success: function(datanews){
 						var html = '';
-						var t = 1;
-							for(var i = 0; i < datanews.responseData.stableNews.media.images.length; i++){
-						  		html += '<div class="race"><a href="#"><img src="'+datanews.responseData.stableNews.media.images[j].cdnSmall+'"></a><div class="right-newletter"><a href="#"><h3>'+datanews.responseData.stableNews.media[j].title+'</h3></a><p>'+datanews.responseData.stableNews.publishedDate[i]+'</p></div></div>';
+						var j = 1;
+							for(var i = 0; i < datanews.responseData.stableNews.length; i++){
+								console.log(datanews.responseData.stableNews[i].media.images[6]);
+						  		html += '<div class="race"><a href="#"><img src="'+datanews.responseData.stableNews[i].media.images[6]+'"></a><div class="right-newletter"><a href="#"><h3>'+datanews.responseData.stableNews[i].title+'</h3></a><p>'+datanews.responseData.stableNews[i].publishedDate+'</p></div></div>';
 									if ((i+1)%10 == 0){
-											jQuery('#race-new'+t).html(html);
+										if ((i+1)/10 == 1) {
+											jQuery('#race-inner').append('<div class="carousel-item active" id="race-new'+j+'">');
+											jQuery('#race-new'+j).html(html);
 											html = '';
-											t++;
+											j++;
+										}else{
+											jQuery('#race-inner').append('<div class="carousel-item" id="race-new'+j+'">');
+											jQuery('#race-new'+j).html(html);
+											html = '';
+											j++;
+										}
 									}
-								}
 							}
 							// console.log(datanews);
 					}

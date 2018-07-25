@@ -526,6 +526,12 @@ ul li {
   .contact-info p {
     float: left; }
 
+.race-news .carousel-control-prev {
+  width: 0; }
+
+.race-news .carousel-control-next {
+  width: 0; }
+
 .box {
   -webkit-transform: rotate(30deg);
   -ms-transform: rotate(30deg);

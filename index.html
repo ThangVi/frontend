@@ -17,54 +17,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 	<script type="text/javascript" src="json/horses.json"></script>
 	<script type="text/javascript" src="json/news.json"></script>
-	<script type="text/javascript">
-		var getData = {
-  	"responseData":{  
-    	"elements":[  
-      {  
-        "trainer":{  
-          "id":207,
-          "name":"Matthew Dunn",
-          "avatar":"https://prism.horse/api/public/image/36f5f498071047b5a936c22cf6aeadd4.png"
-        },
-        "name":"Bronzed Venom",
-        "id":18432,
-        "avatar":"https://prism.horse/api/public/image/a6781a21dd374dc08de34b641e7cc7cd.png"
-      },
-      {  
-        "trainer":{  
-          "id":207,
-          "name":"Matthew Dunn",
-          "avatar":"https://prism.horse/api/public/image/36f5f498071047b5a936c22cf6aeadd4.png"
-        },
-        "name":"Blue Book",
-        "id":117760,
-        "avatar":null
-      },
-      {  
-        "trainer":{  
-          "id":207,
-          "name":"Matthew Dunn",
-          "avatar":"https://prism.horse/api/public/image/36f5f498071047b5a936c22cf6aeadd4.png"
-        },
-        "name":"Loose Goose",
-        "id":24067,
-        "avatar":"https://prism.horse/api/public/image/51406ad089f042ed9c858848611fd3b8.png"
-      },
-      {  
-        "trainer":{  
-          "id":207,
-          "name":"Matthew Dunn",
-          "avatar":"https://prism.horse/api/public/image/36f5f498071047b5a936c22cf6aeadd4.png"
-        },
-        "name":"Contralto",
-        "id":24068,
-        "avatar":null
-      }
-      ]}}
-	</script>
+	<script type="text/javascript" src="js/datahorse.js"></script>
 </head>
-<body onload="loaddata();">
+<body onload="loadAjax();">
 	<header class="header">
 		<div class="container">
 			<div class="row">
@@ -158,6 +113,43 @@
 				<div class="horse-available col-md-3 col-sm-3">
 					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 					  <div class="carousel-inner">
+					    <div class="carousel-item active" id="carousel-item1">
+
+					    </div>
+					    <div class="carousel-item" id="carousel-item2">
+
+					    </div>
+					    <div class="carousel-item" id="carousel-item3">
+
+					    </div>
+					    <div class="carousel-item" id="carousel-item4">
+
+					    </div>
+					    <div class="carousel-item" id="carousel-item5">
+
+					    </div>
+					    <div class="carousel-item" id="carousel-item6">
+
+					    </div>
+					    <div class="carousel-item" id="carousel-item7">
+
+					    </div>
+					  </div>
+					  <div class="arrow-control">
+						  <a class="carousel-control-prev left-arrow box-arrow" href="#carouselExampleControls" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next right-arrow box-arrow" href="#carouselExampleControls" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a> 
+					  </div>
+					</div>
+				</div>
+				<!-- <div class="horse-available col-md-3 col-sm-3">
+					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					  <div class="carousel-inner">
 					    <div class="carousel-item active" id="carousel-item">
 					      <div class="horse-image">
 									<a href="#"><img src="images/image-horse.png"/></a>
@@ -234,7 +226,7 @@
 					    <span class="sr-only">Next</span>
 					  </a>
 					</div>
-				</div>
+				</div> -->
 
 				<!------------------- mid content ---------------- -->
 				
@@ -281,8 +273,36 @@
 				</div>
 
 				<!------------------- right content ---------------- -->
-
 				<div class="new-stable col-md-3 col-sm-3">
+					<div class="race-info">
+						<a href="#"><img src="images/race-img.png"></a>
+						<a href="#"><h3>Edmonds Racing Newsletter - February 2018</h3></a>
+						<p>Feb 08,2018</p>
+					</div>
+					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					  <div class="carousel-inner" id="race-inner">
+					    <div class="carousel-item active" id="race-new1">
+					      
+					    </div>
+					    <div class="carousel-item" id="race-new2">
+
+					    </div>
+					    <div class="carousel-item" id="race-new3">
+
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+				</div>
+
+				<!-- <div class="new-stable col-md-3 col-sm-3">
 					<div class="race-info">
 						<a href="#"><img src="images/race-img.png"></a>
 						<a href="#"><h3>Edmonds Racing Newsletter - February 2018</h3></a>
@@ -357,7 +377,7 @@
 							<a href="#"><h3>Inside Bernborough handicap barrier ideal for Zahspeed</h3></a>
 							<p>Feb 08,2018</p>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -659,27 +679,5 @@
 			</div>
 		</div>
 	</footer>
-	 <a href="#" id="clickme">Get JSON Data</a>
 </body>
-
-<script type="text/javascript">
-			
-			function loaddata() {
-				// var task1 = function (){
-				//   return new Promise (function(resolve, reject){
-				//     readTextFile("js/horses.json", function(text){
-				//     var getData = JSON.parse(text);
-				//     console.log(getData);
-				//     }); 
-				//   });
-				// };
-				// var getData = JSON.parse(text);
-				// console.log(getData);
-        var html = '';
-        for (var i = 0; i <= getData.responseData.elements.length; i++){ 
-          html+= '<div class="horse-image"><a href="#"><img src="'+getData.responseData.elements[i].avatar+'"/></a><h3>'+getData.responseData.lements[i].name+'</h3><p>'+getData.responseData.elements[i].id+'</p></div>';
-        }
-      	document.getElementById("carousel-item").innerHTML = html; 
-      };
-</script>
 </html>
